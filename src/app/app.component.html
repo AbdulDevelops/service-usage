@@ -2,22 +2,13 @@
 
 <div class="row">
 <div class="col-xs-12 col-md-8 col-md-offset-2">
-  <app-active-users
-  [users]="activeUsers"
-  (userSetToInActive)="onSettingInactive($event)">
-<p>Click Count: {{ getClick() }}</p>
 
-</app-active-users>
-
-  <app-inactive-users
-  [users]="inactivUsers"
-   (setToActivating)="onSettingActive($event)">
-<p>Click Count: {{ getClick() }}</p>
-
-</app-inactive-users>
-<h1> Count: {{ getClick() }}</h1>
+  <app-active-users></app-active-users>
 
 
+  <app-inactive-users></app-inactive-users>
+
+<!-- <h1> Count: {{ getClick() }}</h1> -->
 
 </div>
 </div>
